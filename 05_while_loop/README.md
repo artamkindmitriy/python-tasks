@@ -373,7 +373,7 @@ high = 100
 attempts = 0
 
 while low <= high:
-    mid = (low + high) // 2  # Середина текущего диапазона
+    mid = (low + high) // 2
     attempts += 1
     
     print(f"Попытка {attempts}. Моё предположение: {mid}")
@@ -385,9 +385,9 @@ while low <= high:
         print(f"Ура! Я угадал ваше число {mid} за {attempts} попыток.")
         break
     elif response == '2':
-        low = mid + 1  # Загаданное число больше — сужаем диапазон вверх
+        low = mid + 1
     elif response == '3':
-        high = mid - 1  # Загаданное число меньше — сужаем диапазон вниз
+        high = mid - 1
     else:
         print("Пожалуйста, введите 1, 2 или 3.")
         continue
