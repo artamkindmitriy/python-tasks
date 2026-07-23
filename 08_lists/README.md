@@ -656,7 +656,7 @@ print(f"Общий список задач: {combined}")
 for i in combined:
     if i == 0:
         count += 1
-print(f"Кол-во невыполненных задач: {count}")ашк
+print(f"Кол-во невыполненных задач: {count}")
 ```
 
 ### Задача 14. **Вредоносное ПО**
@@ -1023,7 +1023,7 @@ print(cyclic_shift([1, 4, -3, 0, 10], 3))
 
 ```python
 def palindrome(text):
-    return text[::-1] == text # Переворачивает строку и сравнивает
+    return text[::-1] == text
 while True:
     text = input("Введите слово: ")
     print(f"Слово является палиндромом" if palindrome(text) else "Слово не является палиндромом")
